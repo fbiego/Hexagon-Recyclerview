@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
+    compileSdkVersion 31
     buildToolsVersion "23.0.3"
 
     defaultConfig {
         applicationId "com.abed.HexagonRecyclerViewSample"
         minSdkVersion 14
-        targetSdkVersion 23
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
     }
@@ -21,12 +21,12 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:support-v4:23.4.0'
-    compile 'com.android.support:appcompat-v7:23.4.0'
-    compile 'com.android.support:recyclerview-v7:23.4.0'
-    compile 'com.github.bumptech.glide:glide:3.7.0'
-    compile 'com.mindvalley.android:hexagonrecyclerview:1.0.0'
-    compile 'com.github.siyamed:android-shape-imageview:0.9.+@aar'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.13.2'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'com.mindvalley.android:hexagonrecyclerview:1.0.0'
+    implementation 'com.github.siyamed:android-shape-imageview:@aar'
 }

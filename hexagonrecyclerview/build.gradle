@@ -1,45 +1,45 @@
 apply plugin: 'com.android.library'
 
-def packageName = 'com.mindvalley.android'
-def library_version = '1.0.0'
-
-
-ext {
-    bintrayRepo = 'maven'
-    bintrayName = 'hexagon-recyclerview'
-
-    publishedGroupId = packageName
-    libraryName = 'hexagonrecyclerview'
-    artifact = 'hexagonrecyclerview'
-
-    libraryDescription = 'This is a recyclerview where items are interpolated in a way that looks like a honeycomb. It can be customized to be vertically or horizontally scrollable.'
-
-    siteUrl = 'https://github.com/xresco/Hexagon-Recyclerview'
-    gitUrl = 'https://github.com/xresco/Hexagon-Recyclerview.git'
-
-    libraryVersion = library_version
-
-    developerId = 'xresco'
-    developerName = 'Abed Almoradi'
-    developerEmail = 'abd.almoradi@gmail.com'
-
-    licenseName = 'The Apache Software License, Version 2.0'
-    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-    allLicenses = ["Apache-2.0"]
-}
+//def packageName = 'com.mindvalley.android'
+//def library_version = '1.0.0'
+//
+//
+//ext {
+//    bintrayRepo = 'maven'
+//    bintrayName = 'hexagon-recyclerview'
+//
+//    publishedGroupId = packageName
+//    libraryName = 'hexagonrecyclerview'
+//    artifact = 'hexagonrecyclerview'
+//
+//    libraryDescription = 'This is a recyclerview where items are interpolated in a way that looks like a honeycomb. It can be customized to be vertically or horizontally scrollable.'
+//
+//    siteUrl = 'https://github.com/xresco/Hexagon-Recyclerview'
+//    gitUrl = 'https://github.com/xresco/Hexagon-Recyclerview.git'
+//
+//    libraryVersion = library_version
+//
+//    developerId = 'xresco'
+//    developerName = 'Abed Almoradi'
+//    developerEmail = 'abd.almoradi@gmail.com'
+//
+//    licenseName = 'The Apache Software License, Version 2.0'
+//    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+//    allLicenses = ["Apache-2.0"]
+//}
 
 
 android {
-    compileSdkVersion 23
+    compileSdkVersion 31
     buildToolsVersion "23.0.3"
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 23
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
     buildTypes {
         release {
@@ -50,15 +50,15 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:23.4.0'
-    testCompile 'junit:junit:4.12'
-    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
-    androidTestCompile 'com.android.support.test:runner:0.5'
-    androidTestCompile 'com.android.support:support-annotations:23.4.0'
-    compile 'com.android.support:recyclerview-v7:23.4.0'
-    compile 'com.github.siyamed:android-shape-imageview:0.9.+@aar'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.annotation:annotation:1.3.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'com.github.siyamed:android-shape-imageview:@aar'
 }
 
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'

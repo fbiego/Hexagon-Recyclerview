@@ -1,10 +1,11 @@
 package com.abed.HexagonRecyclerViewSample.adapter;
 
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.abed.HexagonRecyclerViewSample.R;
 import com.abed.hexagonrecyclerview.view.HexagonImageView;
@@ -82,7 +83,6 @@ public class ImagesAdapter extends RecyclerView.Adapter<ImagesAdapter.CustomView
             this.image_url = image_url;
             Glide.with((imageView).getContext())
                     .load(image_url)
-                    .asBitmap()
                     .placeholder(R.drawable.sample)
                     .into(imageView);
         }

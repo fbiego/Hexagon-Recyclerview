@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Hexagon_Recyclerview.iml" filepath="$PROJECT_DIR$/Hexagon_Recyclerview.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/hexagonrecyclerview/hexagonrecyclerview.iml" filepath="$PROJECT_DIR$/hexagonrecyclerview/hexagonrecyclerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Hexagon-Recyclerview.iml" filepath="$PROJECT_DIR$/.idea/modules/Hexagon-Recyclerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Hexagon-Recyclerview.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Hexagon-Recyclerview.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hexagonrecyclerview/Hexagon-Recyclerview.hexagonrecyclerview.iml" filepath="$PROJECT_DIR$/.idea/modules/hexagonrecyclerview/Hexagon-Recyclerview.hexagonrecyclerview.iml" />
     </modules>
   </component>
 </project>
